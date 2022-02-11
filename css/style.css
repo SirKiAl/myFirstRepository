@@ -1,0 +1,230 @@
+/* Удаленное подключение: */
+/* &display=swap&subset=cyrillic-ext */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500, 700,900&display=swap");
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+li {
+   list-style: none;
+}
+a,
+a:visited {
+   text-decoration: none;
+   color: inherit;
+}
+a:hover {
+   text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+img {
+   vertical-align: top;
+}
+html,
+body {
+   height: 100%;
+}
+html {
+   font-size: 16px;
+}
+body {
+   line-height: 1;
+   /* overflow-x: hidden; */
+   /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+}
+.wrapper {
+   overflow: hidden;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+/* —----------------------------------— */
+
+.main {
+   padding: 150px 0px 0px 0px;
+}
+
+[class*="__container"] {
+   box-sizing: content-box;
+   margin: 0 auto;
+   padding: 0px 10px;
+}
+
+body {
+   background: #f5f5f5;
+   font-family: Roboto;
+}
+/* ----------------------------- */
+
+.header {
+   padding: 1.805% 0px 700px 0px;
+   background: url("../img/header/BG\ Image.jpg") 70% center / cover no-repeat;
+}
+.header__container {
+   width: 70.833%;
+}
+.header__contact {
+}
+.contact {
+   display: flex;
+   justify-content: space-between;
+   font-size: calc(100vw / 120);
+   align-items: center;
+}
+.contact__logo {
+   flex: 0 0 17.059%;
+   display: flex;
+}
+.contact__logo img {
+   width: 100%;
+   align-self: center;
+}
+.contact__content {
+   flex: 0 0 59.805%;
+   color: #ffffff;
+   line-height: 1.83;
+   letter-spacing: 0.15px;
+   display: flex;
+   justify-content: space-between;
+   column-gap: 10px;
+   justify-items: flex-start;
+
+}
+.contact__bording-time {
+   padding: 0px 0px 0px 5.574%;
+   font-weight: bold;
+   flex: 0 0 34.59%;
+   position: relative;
+}
+.contact__bording-time::first-line {
+   text-transform: uppercase;
+}
+.contact__bording-time::before {
+   content: "";
+   position: absolute;
+   top: 4%;
+   left: 0;
+   height: 58.565%;
+   width: 11.375%;
+   background: url("../img/header/access_time_24px.svg") 0 0 / 100% 100% no-repeat;
+}
+.contact__call-us {
+   padding: 0px 0px 0px 5.574%;
+   font-weight: 500;
+   position: relative;
+   flex: 0 0 21.478%;
+}
+.contact__call-us::first-line {
+   text-transform: uppercase;
+}
+.contact__call-us::before {
+   content: "";
+   position: absolute;
+   top: 6%;
+   left: 0;
+   height: 58.565%;
+   width: 18.32%;
+   background: url("../img/header/phone_24px.svg") 0 0 / 100% 100% no-repeat;
+}
+.contact__button {
+   text-align: center;
+   padding: 1.314% 2.46%;
+   align-self: flex-start;
+   text-transform: uppercase;
+   line-height: 2;
+   font-weight: bold;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: #f2726f;
+   border-radius: 8px;
+   flex: 0 0 34.59%;
+}
+
+@media (max-width: 1025px) {
+   .header__container {
+      width: 90%;
+   }
+   .contact {
+      font-size: calc(100vw / 90);
+   }
+   .contact__logo{
+      flex: 0 0 20.059%;
+   }
+   .contact__content{
+      flex: 0 0 60.805%;
+   }
+   .contact__bording-time {
+      padding: 0px 0px 0px 5.974%;
+   }
+   .contact__call-us {
+      padding: 0px 0px 0px 5.774%;
+   }
+}
+
+@media (max-width: 640px) {
+   .contact__button {
+      display: none;
+   }
+   .contact {
+      font-size: calc(100vw / 60);
+   }
+
+   .contact__logo {
+      flex: 0 0 28.059%;
+   }
+   .contact__content {
+      flex: 0 0 53.805%;
+   }
+   .contact__bording-time {
+      flex: 0 0 59.59%;
+      padding: 0px 0px 0px 10.574%;
+   }
+   .contact__call-us {
+      flex: 0 0 37.478%;
+      padding: 0px 0px 0px 10.574%;
+   }
+}
+
+@media (max-width: 380px) {
+   .header__container {
+      width: 93%;
+   }
+   .contact {
+      font-size: calc(100vw / 36);
+   }
+   .contact__logo{
+      flex: 0 0 47%;
+   }
+   .contact__content {
+      justify-content: flex-end;
+   }
+   .contact__bording-time {
+      display: none;
+   }
+   .contact__call-us {
+      font-size: 0;
+      height: 40px;
+      flex: 0 0 40px;
+      padding: 0px 0px 0px 40px;
+   }
+   .contact__call-us::before{
+      width: 100%;
+      top: 12%;
+   }
+}
